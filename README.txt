@@ -8,3 +8,9 @@ Copyright (c) 2025 Chad Nelson (chadn22006@gmail.com)
 #Translation: Ofcourse you can use this for you project! Just make sure to #say where you got this from :)
 
 #THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR #IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, #FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE #AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER #LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING# #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER #DEALINGS IN THE SOFTWARE.
+
+
+
+A project that i started that has like a snitch or people list, If you wanna add to the code and/or make this better im very interested in seeing what you got!
+
+
