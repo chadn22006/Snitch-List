@@ -1,0 +1,90 @@
+<!-- Copyright (c) 2025 Chad Nelson (chadn22006@gmail.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*Translation: Ofcourse you can use this for you project! Just make sure to say where you got this from :)
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .modal-body p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- The Modal -->
+    <div class="modal fade" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="disclaimerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="disclaimerModalLabel">Sensitive Content Disclaimer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>[yoursite].com is owned and operated by [your name]. The content on this website is provided for informational purposes only and may contain material that some users could find sensitive or offensive. The views and opinions expressed on this site are those of the users of the site and do not necessarily reflect the official policy or position of [yoursite].com or its owner, [your name].</p>
+                    <p>By accessing and using [yoursite].com, you acknowledge that the content may include explicit language, graphic images, and discussions on sensitive topics. Viewer discretion is advised.</p>
+                    <p>You agree to use the information on this site responsibly and not to harass, retaliate, bully, or harm any individuals mentioned or depicted herein. The accuracy, completeness, and reliability of the information cannot be guaranteed, and any and all information about a person on this site may or may not be accurate.</p>
+                    <p>This site is for informational purposes only. By accessing and using this site, you agree to indemnify and hold harmless [your name], [yoursite].com, and any affiliated parties from any and all claims, damages, or liabilities arising from the use of the information provided herein.</p>
+                    <p>If you are with any law enforcement, law firm, or any security agency and need any case-damaging content or risk of harm to someone that is still active in a case/cases to be removed, please contact me ASAP via my contact form! By using my site, you agree to not harm, bully, or harass anyone. Any and all information about someone can be completely false, and all the information on my site is not intended to harm or cause harm to anyone or anything. All the information contained on my site should not be used in any legal or criminal cases in any form. This is only for educational and informational purposes only. Only if you agree to these terms can you use my website!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="window.close();">Disagree</button>
+                    <button type="button" class="btn btn-primary" id="agreeButton">Agree</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" style="display: none;">
+        <h2>Welcome to MaddChad.com! would you like to</h2>
+        <p><a href="add.html">Add a Person to the snitch list</a></p>
+<p>or</p>
+        <p><a href="list.php">View the snitch list</a></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#disclaimerModal').modal('show');
+
+            $('#agreeButton').on('click', function() {
+                $('#disclaimerModal').modal('hide');
+                $('#content').show();
+            });
+
+            function checkPopupBlocker() {
+                var testWindow = window.open('', '_blank', 'width=100,height=100');
+                if (!testWindow || testWindow.closed || typeof testWindow.closed == 'undefined') {
+                    alert('Popup blocker is enabled! Please disable it to use this site.');
+                } else {
+                    testWindow.close();
+                }
+            }
+
+            checkPopupBlocker();
+        });
+    </script>
+</body>
+</html>
